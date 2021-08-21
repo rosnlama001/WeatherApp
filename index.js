@@ -1,6 +1,7 @@
 const fs = require("fs");
 const http = require("http");
 const requests = require("requests");
+const port = process.env.PORT || 3000
 const homeFile = fs.readFileSync("index.html", "utf-8");
 const replaceVal = (temData, orgiData) => {
     let data = temData.replace("{%location%}", orgiData.name);
@@ -34,4 +35,6 @@ const server = http.createServer((req, res) => {
             });
     }
 })
-server.listen(8080, "127.0.0.1");
+server.listen(port,()=>{
+    console.log(`Server is running on port no ${port}`)
+});
