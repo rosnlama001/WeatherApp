@@ -1,0 +1,20 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "Giving Weather Information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "start": "node index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rosnlama001/WeatherApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rosnlama001/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/rosnlama001/WeatherApp#readme"
+}
